@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+    width: 600px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    border-left: 5px solid red;
+    border-right: 5px solid purple;
+    font-weight: bold;
+}
+.first::before{
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 600px;
+    top: -5px;
+    left: -5px;
+    background-image: linear-gradient(to right, red 20%, rgb(0, 102, 255) 20%, rgb(0, 102, 255) 40%, #4caf50 40%, #4caf50 60%, rgb(250, 4, 86) 60%, rgb(250, 4, 86) 80%, purple 80%,purple 100%);
+}
+.first::after{
+    content: "";
+    background-color: red;
+    height: 5px;
+    position: absolute;
+    width: 600px;
+    top: 58px;
+    left: -5px;
+    background-image: linear-gradient(to right, red 20%, rgb(0, 102, 255) 20%, rgb(0, 102, 255) 40%, #4caf50 40%, #4caf50 60%, rgb(250, 4, 86) 60%,rgb(250, 4, 86) 80%, purple 80%, purple 100%);
+}
+.first::first-letter{
+    content: "";
+    color: red;
+}
+div{
+    position: relative;
+  width: 600px;
+    margin: 10px auto;
+}
+input{
+    display: block;
+    margin: 10px auto;
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    border: none;
+    caret-color: red;
+}
+div::before{
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 600px;
+    top: 55px;
+    left: 0;
+    background-image: linear-gradient(to right, red 50%,  rgb(0, 102, 255) 50%);
+}
+input:focus{
+    outline: none;
+}

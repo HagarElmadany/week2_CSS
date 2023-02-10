@@ -1,0 +1,85 @@
+git:distributed version control system نظام بيتحكم فى الفيرجن
+repository مستودع
+branchفرع من الrepo
+commit(check point)
+clone نسخه من local or remote
+push(uploadlocal to remote)
+pull(اسحب التعديلات)
+********************************************
+git clone "URL"
+- Add Files
+git add <File> <File>
+git add *.extension
+git add *
+
+-Show Status
+git status
+
+-Commit Changes
+git commit -m "Commit Message رساله انا عملت ايه"
+
+*****************
+-Show Branches
+git branch(master)
+git remote -v( origin)
+
+-Push Changes
+git push origin main
+
+- Add Files
+git add <File> <File>
+
+- Commit Changes
+git commit -m "Commit Message"
+*****************
+- Pull Changes From Remote Repository
+git pull origin
+****************
+-Show All Configurations
+git help config
+
+- Show User Email
+git config --global user.email
+
+-Change User Email
+git config --global user.email "Github Email"
+
+-Edit Configuration
+git config --global --edit
+
+-Create New File
+touch "File Name"
+*****************
+- Generate Key
+ssh-keygen -t rsa -b 4096 -C "GitHub Email"
+
+- Get Key To Copy
+cat ~/.ssh/id_rsa.pub
+
+-Test Key And Connection
+ssh -T git@github.com
+*******************
+-Create New Directory
+mkdir "Directory Name"
+
+- Initialize Empty Git Repository
+git init
+
+- Create Empty File
+touch "File Name"
+
+- Show Status
+git status
+
+- Add Files
+git add <File> <File>
+
+- Commit File
+git commit -m "Your Commit Message Here"
+
+-Add Repository
+git remote add origin "SSH Repository URL"
+
+- Push Data
+git push -u origin master
+********************************

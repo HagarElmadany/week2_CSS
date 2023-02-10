@@ -1,0 +1,101 @@
+- Make Alias For Command(status)
+git config --global alias.st status
+
+- Show Alias Content
+git config --global alias.st
+
+- Test (status) Command
+git st
+
+-Make Alias For Command (branch)
+git config --global alias.br branch
+
+- Show Alias Content
+git config --global alias.br
+
+- Test (branch) Command
+git br
+
+-Make Alias For Command (commit -m)
+git config --global alias.cm (commit -m)
+
+-Show Alias Content
+git config --global alias.cm
+
+-Test(branch)Command
+git cm
+-Show All Edits
+git config --global --edit
+**************************
+-Show Branches
+git branch
+
+-Switch To Branch
+git checkout (Branch Name)
+
+-Delete Branch
+git branch -d (Branch Name)
+
+- Create Branch And Switch To It
+git checkout -b (Branch Name)
+
+- Move / Rename Branch
+git branch -m (New Branch Name)
+
+-Merge Branch With Current Branch
+git merge (Branch Name)
+******************************
+Mastering Stash
+-Create Text File With 
+- Save Work To Stash
+git stash
+- List Items in Stash
+git stash list
+- Get Work From Stash
+git stash pop
+- Save To Stash
+git stash
+-List Items in Stash
+git stash list
+-Get From Stash
+git stash pop
+-Save Work To Stash
+git stash save(Description)
+- Empty The Stash
+git stash clear
+************************
+-Restore Staged Files
+git restore --staged (File Name)
+-Show Files
+git clean -n
+-Remove Files
+git clean -f
+***********************
+ Resetting The Head
+- Show Log File
+git log
+-Reset Head
+git reset --hard (Commit Hash)
+- Push Edits
+git push origin main --force
+*******************************
+Ignoring Files And Directories
+*.log
+!vip.log
+node_packs/
+text.txt
+**********************
+TAGING
+- Show All Tags
+git tag
+-Add New Lightweight Tag
+git tag (Tag Name)
+-Add New Annotated Tag
+git tag -a (Tag Name) -m 
+-Push Tag To Remote
+git push origin (Tag Name)
+
+-Delete Tag
+git tag -d (Tag Name)
+-Delete Tag From Remote
+git push origin --delete(Tag Name)
